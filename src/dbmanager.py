@@ -2,10 +2,10 @@ import pymysql
 
 class DbManager:
     def __init__(self):
-        self.conn = pymysql.connect(host='127.0.0.1',
+        self.conn = pymysql.connect(host='localhost',
                                     unix_socket='/tmp/mysql.sock',
                                     user='root',
-                                    passwd=None,
+                                    passwd='zgl123',
                                     db='jiapu',
                                     charset='utf8')
     def commit(self):

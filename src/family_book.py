@@ -153,9 +153,9 @@ def gen_book(member_dict, first_member_id, file_name):
             if spouse_introduction[-1] != "。":
                 spouse_introduction = spouse_introduction + "。"
             if member_obj.sex == 0:
-                record_content += "其夫系" + spouse_introduction
+                record_content += "其夫" + spouse_introduction
             else:
-                record_content += "其妻系" + spouse_introduction
+                record_content += "其妻" + spouse_introduction
 
         record_content += "</font>"
 
